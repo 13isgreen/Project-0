@@ -1,12 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google</title>
+		<link href="{% static 'index/styles.css' %}" rel="stylesheet">
+		<link rel="icon" href="{% static 'index/google-icon.png' %}">
+
     </head>
     <body>
+		
+		<header>
+			<nav>
+				<ul class="header-nav">
+					<a href="#">About</a>
+					<a href="#">Store</a>
+				</ul>
+				<ul class="header-nav">
+					<a href="#">Gmail</a>
+					<a href="#">Images</a>
+					<img class="header-img" src="{% static 'index/google-aps.png' %}" alt="google-apps"
+						width="25"
+						height="25"/>
+					<img class="header-img" src="{% static 'index/google-pfp.png' %}" alt="google-pfp"
+						width="25"
+						height=25"/>
+				</ul>
+			</nav>
+		</header> 
+
+		<div>
         <form action="https://www.google.com/search">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
         </form>
+		</div>
     </body>
 </html>
