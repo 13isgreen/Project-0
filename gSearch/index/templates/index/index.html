@@ -30,11 +30,31 @@
 			</nav>
 		</header> 
 
-		<div>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-		</div>
+		<section>
+			<h1>
+				<span style="color: #4285F4;">G</span>
+				<span style="color: #DB4437;">o</span>
+				<span style="color: #F4B400;">o</span>
+				<span style="color: #4285F4;">g</span>
+				<span style="color: #0F9D58;">l</span>
+				<span style="color: #DB4437;">e</span>
+			</h1>
+			<div class="my-input-container">
+				<img src="{% static 'index/mag-glass.png' %}" alt="mag-glass"
+					width="25"
+					height="25"/>
+				<form action="http://www.google.com/search">
+				<input type="text" class="no-outline" name="q">
+				</form>
+				<img src="{% static 'index/mic.png' %}" alt="mic"
+					width="25"
+					height="25"/>
+			</div>
+
+			<div class="my-button-container">
+				<button>Google Search</button>
+				<button>I'm Feeling Lucky</button>
+			</div>
+		</section>
     </body>
 </html>
